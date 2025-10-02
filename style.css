@@ -60,7 +60,7 @@
         width: 40px; height: auto; align-self: flex-start;
         margin-left: 20px;
     }
-    .main-title { font-size: 13px; font-weight: bold; }
+    .main-title { font-size: 14px; font-weight: bold; }
 
     .clickable-header {
       display: flex; justify-content: space-between; align-items: center;
