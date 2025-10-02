@@ -157,27 +157,35 @@
       0% { transform: translateX(-367px); } 100% { transform: translateX(0px); }
     }
 
-    .validity-banner {
-      background-color: var(--validity-banner-bg); color: var(--text-on-accent-bg);
-      padding: 10px 16px; border-radius: 6px; text-align: center;
-        font-size: clamp(1rem, 0.1vw, 2rem);; font-weight: 500;
-      /* Default full width, will be overridden by media query */
-      width: 100%;
-      box-sizing: border-box; /* Ensure padding is included in width */
-      margin: 0 auto; /* Center if max-width is applied */
-    }
-    .validity-banner strong { font-weight: bold; }
+.validity-banner {
+  background-color: var(--validity-banner-bg); /* Sfondo verde definito nelle variabili */
+  color: var(--text-on-accent-bg); /* Colore del testo bianco */
+  padding: 10px 15px; /* Padding ridotto sopra/sotto rispetto a prima */
+  border-radius: 6px; /* Angoli arrotondati */
+  text-align: left; /* Allinea il testo a sinistra */
+  font-size: clamp(0.95rem, 0.2vw, 1.75rem);
+  font-weight: 500; /* Peso medio del font */
+  width: 100%; /* Larghezza piena */
+  box-sizing: border-box; /* Padding incluso nella larghezza */
+  margin: 0 auto; /* Centra il contenuto se max-width definito */
+}
 
-    /* Media query for mobile devices to set specific banner size */
-    @media (max-width: 600px) { /* Adjust breakpoint as needed */
-        .validity-banner {
-            height: 52px;
-            display: flex; /* To center text vertically if needed */
-            align-items: center;
-            justify-content: center;
-            padding: 0 10px; /* Adjust padding if fixed height causes overflow */
-        }
-    }
+/* Rende in grassetto i strong dentro la validità */
+.validity-banner strong {
+  font-weight: bold;
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 600px) {
+  .validity-banner {
+    height: auto; /* Altezza definita automaticamente in base al contenuto */
+    display: flex; /* Usa flexbox per allineare verticalmente */
+    align-items: center; /* Allinea verticalmente al centro */
+    justify-content: flex-start; /* Allinea contenuto a sinistra */
+    padding: 10px 10px; /* Padding compatto */
+  }
+}
+
 
 
     .detail-item { display: flex; flex-direction: column; gap: 4px; font-size: 14px;}
@@ -353,6 +361,7 @@ body {
   body {
     padding-bottom: 120px; /* ridotto per mobile */
   }
+
 }
 
 #infoTesseraButton > .icon-text-container > span,
@@ -360,8 +369,6 @@ body {
   font-size: 12px;  /* Imposta la dimensione desiderata */
   font-weight: 600; /* Mantieni il grassetto */
 }
-
-
 
 
 
