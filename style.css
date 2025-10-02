@@ -362,14 +362,19 @@ body {
 
 
 .validity-banner {
-  font-size: 14px !important;
+  font-size: 14px;
+  font-weight: 500;
   white-space: nowrap;
-  overflow: visible;
-  text-overflow: clip;
-  max-width: 100%;
-  text-align: center;
-  padding: 0 10px;
+  padding: 4px 16px;    /* padding ridotto sopra/sotto */
+  text-align: left;     /* allinea il testo a sinistra */
+  background-color: #2A7345;
+  color: #fff;
+  border-radius: 6px;
+  width: fit-content;   /* la banda segue la lunghezza del testo */
+  margin: 0 0 12px 0;  /* spazio sotto banner opzionale */
+  display: block;
 }
+
 
 
 }
