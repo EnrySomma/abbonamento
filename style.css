@@ -60,7 +60,7 @@
         width: 40px; height: auto; align-self: flex-start;
         margin-left: 20px;
     }
-    .main-title { font-size: 18px; font-weight: bold; }
+    .main-title { font-size: 15px; font-weight: bold; }
 
     .clickable-header {
       display: flex; justify-content: space-between; align-items: center;
@@ -341,18 +341,24 @@ body {
     font-size: 16px;
   }
   .footer-icon {
-    width: 23px;
-    height: 23px;
+    width: 27px;
+    height: 27px;
     left: 10px;
   }
   .footer-sticky {
-    padding-top: 35px;
-    padding-bottom: 45px;
+    padding-top: 25px;
+    padding-bottom: 35px;
   }
 
   body {
-    padding-bottom: 100px; /* ridotto per mobile */
+    padding-bottom: 120px; /* ridotto per mobile */
   }
+
+#infoTesseraButton > .icon-text-container > span,
+#validationHeaderButton > .icon-text-container > span {
+  font-size: 12px;  /* Imposta la dimensione desiderata */
+  font-weight: 600; /* Mantieni il grassetto */
 }
 
 
+}
