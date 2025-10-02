@@ -163,7 +163,7 @@
   padding: 10px 15px; /* Padding ridotto sopra/sotto rispetto a prima */
   border-radius: 6px; /* Angoli arrotondati */
   text-align: left; /* Allinea il testo a sinistra */
-  font-size: clamp(0.95rem, 0.2vw, 1.75rem);
+  font-size: clamp(0.85rem, 0.1vw, 1.5rem); /* Font più piccolo e reattivo */
   font-weight: 500; /* Peso medio del font */
   width: 100%; /* Larghezza piena */
   box-sizing: border-box; /* Padding incluso nella larghezza */
