@@ -353,6 +353,7 @@ body {
   body {
     padding-bottom: 120px; /* ridotto per mobile */
   }
+}
 
 #infoTesseraButton > .icon-text-container > span,
 #validationHeaderButton > .icon-text-container > span {
@@ -361,21 +362,6 @@ body {
 }
 
 
-.validity-banner {
-  font-size: 14px;
-  font-weight: 500;
-  white-space: nowrap;
-  padding: 4px 16px;    /* padding ridotto sopra/sotto */
-  text-align: left;     /* allinea il testo a sinistra */
-  background-color: #2A7345;
-  color: #fff;
-  border-radius: 6px;
-  width: fit-content;   /* la banda segue la lunghezza del testo */
-  margin: 0 0 12px 0;  /* spazio sotto banner opzionale */
-  display: block;
-}
 
 
-
-}
 
